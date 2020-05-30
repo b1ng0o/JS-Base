@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button>Окно появись!</button>
+
+    <div class="modul flip-scale-up-diag-1" style="display: none;">
+        <span>X</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nesciunt nobis dolorum molestiae saepe libero
+        repudiandae magnam, quae excepturi. Optio commodi dolorum, ullam harum assumenda explicabo exercitationem est
+        soluta id.
+    </div>
+    <script>
+        "use strict";
+        const modul = document.querySelector('.modul');
+        const closeMod = document.querySelector('span');
+        const show = document.querySelector('button');
+
+        show.addEventListener('click', function () {
+            modul.setAttribute('style', 'display:block');
+        });
+
+        closeMod.addEventListener('click', function () {
+            modul.setAttribute('style', 'display:none');
+        });
+
+        
+    </script>
+</body>
+
+</html>
